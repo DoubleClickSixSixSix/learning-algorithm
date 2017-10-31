@@ -6,9 +6,9 @@ package org.algorithm.learn.util;
 public class SwapData {
 
     public static void swapIndex(int[] arr, int i, int j){
-        arr[i] = arr[i] + arr[j];
-        arr[j] = arr[i] - arr[j];
-        arr[i] = arr[i] - arr[j];
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
 
     public static void main(String[] args) {
